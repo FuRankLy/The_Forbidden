@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33FBA666-A212-4266-9703-ADA05E414205}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>The_Forbidden</RootNamespace>
+    <AssemblyName>The Forbidden</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirm.Designer.cs">
+      <DependentUpon>Confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lvlfour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lvlfour.Designer.cs">
+      <DependentUpon>Lvlfour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lvlfive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lvlfive.Designer.cs">
+      <DependentUpon>Lvlfive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lvlfin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lvlfin.Designer.cs">
+      <DependentUpon>Lvlfin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lvlthree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lvlthree.Designer.cs">
+      <DependentUpon>Lvlthree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lvltwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lvltwo.Designer.cs">
+      <DependentUpon>Lvltwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Retry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Retry.Designer.cs">
+      <DependentUpon>Retry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Load.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Load.Designer.cs">
+      <DependentUpon>Load.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lvlone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lvlone.Designer.cs">
+      <DependentUpon>Lvlone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Confirm.resx">
+      <DependentUpon>Confirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Load.resx">
+      <DependentUpon>Load.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lvlfour.resx">
+      <DependentUpon>Lvlfour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lvlfive.resx">
+      <DependentUpon>Lvlfive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lvlfin.resx">
+      <DependentUpon>Lvlfin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lvlthree.resx">
+      <DependentUpon>Lvlthree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lvltwo.resx">
+      <DependentUpon>Lvltwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lvlone.resx">
+      <DependentUpon>Lvlone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Retry.resx">
+      <DependentUpon>Retry.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The title 2.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button Unpressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Piskel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Piskel-1.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background 3.0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Title New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HelpP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HelpUN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BACKPRESSED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BACKPRESSED1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BACKUNPRESSED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXITPRESSED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExitUnPRESSED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Piskel-1.png %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Piskel-1.png %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Character Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Character Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Character Left1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Character Move Left.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Character Move right %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Character Move right %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b20e09cd60a61ed3b1a648bf89240687.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Piskel1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOADING.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RED SNAKE.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-gif-maker.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62a08e601703b062303529.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Respawmn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Respawn U.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RetryMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RetryMessage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Letter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jump_Boost_JE2_BE2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Confirmation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9148b57a593d287525b6eae89fc1c68e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9148b57a593d287525b6eae89fc1c68e1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YES.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YesP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34854.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll-g742b949a7_1280.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADTOMOVE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPACETOJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WARNING.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red vines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SUPERJUMP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RED VINE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RED VINE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fail Message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Respawn Pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Respawn U1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AreYouSure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YESUNPRESSED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOPRESSED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOUNPRESSED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YESPRESSED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LETTERbackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prologue FirstHalf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prologue Middle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prologue End.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prologue 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContinueU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContinueP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quote1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quote2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quote3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quote4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quote5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quote6.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
